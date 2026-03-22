@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Prakash ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      background: url('photo.jpeg') no-repeat center center/cover;
+      position: relative;
+      color: white;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 600px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6f91;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Popup styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 350px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .popup-content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .close {
+      cursor: pointer;
+      color: red;
+      font-weight: bold;
+      float: right;
+      font-size: 18px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.8);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Happy Birthday, Prakash ❤️</h1>
+
+
+<div class="card">
+ 
+  <p>
+    From the moment we started talking, something felt special.
+    Just 15 days of conversations yet it felt like I had known you forever. 
+	From a simple ‘hello’ to a lifetime together, you became my most beautiful decision.
+  </p>
+
+  <p>
+    When you flew from Australia to meet me,
+    that moment became one of the most beautiful memories of my life. You traveled miles to meet me, but somehow found a home in my heart forever.
+  </p>
+
+  <p>
+    Our first meeting, our “yes”, our engagement —
+    everything felt so right and full of love. Our story started fast, but every moment with you feels timeless.
+  </p>
+
+  <p>
+    Just few weeks into our marriage, and I already feel so lucky ❤️
+  </p>
+
+  <h2>Happy Birthday, my love 🎂</h2>
+  <p>I love you forever 💖</p>
+<h3>Yours always, Kavya 💖</h3>
+  
+</div>
+
+  <button onclick="showPopup()">Click for Surprise 💌</button>
+</div>
+
+
+  </div>
+
+  <!-- Custom Popup -->
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">✖</span>
+     
+	  <video src="video.mp4" controls width="300" height="300">
+  Your browser does not support the video tag.
+</video>
+      <p style="color: black">Prakash, you are my today, my tomorrow, and my forever ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
